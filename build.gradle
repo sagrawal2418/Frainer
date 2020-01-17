@@ -1,0 +1,48 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.3.61'
+    ext.appcompat_version = "1.1.0-rc01"
+    ext.core_ktx_version = "1.2.0-alpha02"
+    ext.material_version = "1.2.0-alpha03"
+    ext.constraint_layout_version = "2.0.0-beta4"
+    ext.vector_drawable_version = "1.1.0-rc01"
+    ext.annotation_version = "1.1.0"
+    ext.lifecycle_extensions_version = "2.1.0"
+    ext.universal_image_loader_version = "1.9.5"
+    ext.gson_version="2.8.5"
+    ext.retrofit_version = "2.6.1"
+    ext.okhttp_version = "4.0.1"
+    ext.kotlin_coroutine_version = "1.3.0-RC"
+    ext.coroutines_adapter_version = "0.9.2"
+    ext.junit_version = "4.13-beta-3"
+    ext.test_runner_version = "1.3.0-alpha02"
+    ext.espresso_version = "3.3.0-alpha02"
+    ext.dagger2_version = "2.17"
+    ext.nav_version = "2.1.0"
+    repositories {
+        google()
+        jcenter()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.3'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
+        classpath 'com.google.gms:google-services:4.3.3'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
