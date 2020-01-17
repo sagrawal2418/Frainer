@@ -1,7 +1,8 @@
-package com.example.frainer
+package com.example.frainer.base
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.frainer.R
 
 class MainActivity : AppCompatActivity() {
 
