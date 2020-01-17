@@ -1,4 +1,4 @@
-package com.example.frainer.base
+package com.example.frainer.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
